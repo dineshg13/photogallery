@@ -1,0 +1,11 @@
+﻿{{outlet}}
+<div class="thumbnailViewList">
+    <div class="carousel-inner">
+
+        {{#each photo in controller}}
+        {{#link-to 'photo' photo}}
+        <img {{bind-attr src=photo.imageUrl}} class="thumbnailItem" />
+        {{/link-to}}
+        {{/each}}
+    </div>
+</div>

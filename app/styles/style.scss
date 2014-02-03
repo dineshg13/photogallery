@@ -1,0 +1,67 @@
+@import "bootstrap-sass/lib/bootstrap";
+
+/* Put your CSS here */
+html, body {
+    margin: 30px 0;
+}
+
+
+img.thumbnailItem {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 10px;
+    cursor:pointer;
+}
+
+img.thumbnailItem.is-selected {
+    border: 2px solid #000;
+    width: 100px;
+    height: 100px;
+}
+
+.thumbnailViewList {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    height: 100px;
+}
+
+#selectedPhoto h1 {
+    text-decoration: none;
+    clear: left;
+    display: block;
+    padding: 0px;
+    margin: 0 0 0.2em 0;
+    border-bottom: 1px dashed #dba;
+    font-weight: bold;
+    text-align: center;
+}
+
+.selectedPhotoItem {
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    right: 10px;
+    bottom: 150px;
+    overflow: scroll;
+    border-radius: 25px;
+    -moz-bottomleft: 25px;
+}
+
+.selectedPhotoItem img {
+    border-radius: 25px;
+    -moz-bottomleft: 25px;
+     width: 500px;
+    height: 500px;
+}
+
+.controlButtons {
+    position: absolute;
+    bottom: 115px;
+    left: 10px;
+    right: 10px;
+    height: 30px;
+    text-align: center;
+}
