@@ -7654,8 +7654,8 @@ img.thumbnailItem.is-selected {
 .thumbnailViewList {
   position: absolute;
   bottom: 10px;
-  left: 10px;
-  right: 10px;
+  left: 10%;
+  right: 10%;
   height: 100px;
 }
 

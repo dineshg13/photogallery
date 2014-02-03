@@ -1,11 +1,20 @@
-﻿{{outlet}}
+﻿    {{outlet}}
 <div class="thumbnailViewList">
-    <div class="carousel-inner">
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {{#each photo in controller}}
 
-        {{#each photo in controller}}
-        {{#link-to 'photo' photo}}
-        <img {{bind-attr src=photo.imageUrl}} class="thumbnailItem" />
-        {{/link-to}}
-        {{/each}}
+                {{#link-to 'photo' photo}}
+                <img {{bind-attr src=photo.imageUrl}} class="thumbnailItem" />
+                {{/link-to}}
+                {{/each}}
+
+        </div>
+        <div class="controlButtons">
+            <button {{action playslideshow}}>Play</button>
+            <button {{action stopslideshow}}>Stop</button>
+            <button {{action prevphoto}}>Prev</button>
+            <button {{action nextphoto}}>Next</button>
+        </div>
     </div>
 </div>
